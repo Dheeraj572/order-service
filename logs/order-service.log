@@ -1,0 +1,168 @@
+2020-07-24 20:56:24.387  INFO 8808 --- [main] c.m.order.OrderServiceApplication        : No active profile set, falling back to default profiles: default
+2020-07-24 20:56:25.043  INFO 8808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-24 20:56:25.093  INFO 8808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-07-24 20:56:25.233  INFO 8808 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b46bf7a-0557-3abf-896e-491b71322652
+2020-07-24 20:56:25.273  INFO 8808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mindtree.order.client.IProductClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:56:25.313  INFO 8808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:56:25.331  INFO 8808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:56:25.484  INFO 8808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-07-24 20:56:25.490  INFO 8808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-24 20:56:25.490  INFO 8808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-24 20:56:25.602  INFO 8808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-24 20:56:25.603  INFO 8808 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1205 ms
+2020-07-24 20:56:25.673  INFO 8808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-24 20:56:25.748  INFO 8808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-24 20:56:25.753  INFO 8808 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-07-24 20:56:25.851  INFO 8808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-24 20:56:25.899  INFO 8808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-07-24 20:56:25.975  INFO 8808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-24 20:56:26.056  INFO 8808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-24 20:56:26.504  INFO 8808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-24 20:56:26.509  INFO 8808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 20:56:26.748  WARN 8808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-24 20:56:26.972  INFO 8808 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-24 20:56:26.991  WARN 8808 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 20:56:26.992  INFO 8808 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 20:56:26.994  WARN 8808 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 20:56:26.994  INFO 8808 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 20:56:27.071  INFO 8808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-24 20:56:27.428  INFO 8808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-24 20:56:27.439  INFO 8808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-24 20:56:27.459  INFO 8808 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-24 20:56:27.587  INFO 8808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-07-24 20:56:27.698  INFO 8808 --- [main] c.m.order.OrderServiceApplication        : Started OrderServiceApplication in 3.993 seconds (JVM running for 4.592)
+2020-07-24 20:56:38.556  INFO 8808 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-24 20:56:38.558  INFO 8808 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-24 20:56:38.564  INFO 8808 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-24 20:56:38.665  INFO 8808 --- [http-nio-5000-exec-1] c.m.order.service.ProductCacheService    : Retrieving products-------
+2020-07-24 20:56:38.689  INFO 8808 --- [http-nio-5000-exec-1] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 20:56:38.690  INFO 8808 --- [http-nio-5000-exec-1] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 20:56:38.707  INFO 8808 --- [http-nio-5000-exec-1] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 20:56:38.771  INFO 8808 --- [http-nio-5000-exec-1] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 20:56:57.334  INFO 8808 --- [http-nio-5000-exec-2] c.m.order.service.ProductCacheService    : Retrieving products-------
+2020-07-24 20:56:57.344  INFO 8808 --- [http-nio-5000-exec-2] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 20:56:57.345  INFO 8808 --- [http-nio-5000-exec-2] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 20:56:57.346  INFO 8808 --- [http-nio-5000-exec-2] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 20:56:57.351  INFO 8808 --- [http-nio-5000-exec-2] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 20:57:44.197  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-24 20:57:44.202  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-24 20:57:44.205  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 20:57:44.206  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-24 20:57:44.207 ERROR 8808 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table order_mindtree if exists
+2020-07-24 20:57:44.214  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-24 20:57:44.218  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-24 20:57:44.234  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-24 20:57:44.240  INFO 8808 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-07-24 20:57:55.618  INFO 19576 --- [main] c.m.order.OrderServiceApplication        : No active profile set, falling back to default profiles: default
+2020-07-24 20:57:56.239  INFO 19576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-24 20:57:56.310  INFO 19576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 JPA repository interfaces.
+2020-07-24 20:57:56.460  INFO 19576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=96dd4d5c-a7d9-3966-8e09-f0e12ad9f45d
+2020-07-24 20:57:56.518  INFO 19576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mindtree.order.client.IProductClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:57:56.544  INFO 19576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:57:56.587  INFO 19576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 20:57:56.787  INFO 19576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-07-24 20:57:56.794  INFO 19576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-24 20:57:56.795  INFO 19576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-24 20:57:56.931  INFO 19576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-24 20:57:56.931  INFO 19576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1299 ms
+2020-07-24 20:57:56.998  INFO 19576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-24 20:57:57.075  INFO 19576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-24 20:57:57.080  INFO 19576 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-07-24 20:57:57.186  INFO 19576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-24 20:57:57.239  INFO 19576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-07-24 20:57:57.319  INFO 19576 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-24 20:57:57.395  INFO 19576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-24 20:57:57.838  INFO 19576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-24 20:57:57.843  INFO 19576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 20:57:58.087  WARN 19576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-24 20:57:58.340  INFO 19576 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-24 20:57:58.355  WARN 19576 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 20:57:58.355  INFO 19576 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 20:57:58.358  WARN 19576 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 20:57:58.358  INFO 19576 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 20:57:58.459  INFO 19576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-24 20:57:58.858  INFO 19576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-24 20:57:58.878  INFO 19576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-24 20:57:58.919  INFO 19576 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-24 20:57:59.051  INFO 19576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-07-24 20:57:59.168  INFO 19576 --- [main] c.m.order.OrderServiceApplication        : Started OrderServiceApplication in 4.229 seconds (JVM running for 4.776)
+2020-07-24 20:58:32.099  INFO 19576 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-24 20:58:32.100  INFO 19576 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-24 20:58:32.106  INFO 19576 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-24 20:58:32.214  INFO 19576 --- [http-nio-5000-exec-1] c.m.order.service.ProductCacheService    : Retrieving products-------
+2020-07-24 20:58:32.236  INFO 19576 --- [http-nio-5000-exec-1] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 20:58:32.236  INFO 19576 --- [http-nio-5000-exec-1] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 20:58:32.251  INFO 19576 --- [http-nio-5000-exec-1] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 20:58:32.305  INFO 19576 --- [http-nio-5000-exec-1] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 20:58:57.240  INFO 19576 --- [http-nio-5000-exec-2] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 20:58:57.241  INFO 19576 --- [http-nio-5000-exec-2] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 20:58:57.242  INFO 19576 --- [http-nio-5000-exec-2] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 20:58:57.247  INFO 19576 --- [http-nio-5000-exec-2] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 21:05:02.590  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-24 21:05:02.592  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-24 21:05:02.597  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 21:05:02.597  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-24 21:05:02.599 ERROR 19576 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table order_mindtree if exists
+2020-07-24 21:05:02.604  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-24 21:05:02.608  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-24 21:05:02.623  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-24 21:05:02.625  INFO 19576 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-07-24 21:05:10.904  INFO 21208 --- [main] c.m.order.OrderServiceApplication        : No active profile set, falling back to default profiles: default
+2020-07-24 21:05:11.523  INFO 21208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-07-24 21:05:11.573  INFO 21208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-07-24 21:05:11.729  INFO 21208 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=96dd4d5c-a7d9-3966-8e09-f0e12ad9f45d
+2020-07-24 21:05:11.788  INFO 21208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.mindtree.order.client.IProductClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 21:05:11.814  INFO 21208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 21:05:11.859  INFO 21208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-24 21:05:12.024  INFO 21208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-07-24 21:05:12.030  INFO 21208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-24 21:05:12.030  INFO 21208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-24 21:05:12.151  INFO 21208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-24 21:05:12.152  INFO 21208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1228 ms
+2020-07-24 21:05:12.223  INFO 21208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-24 21:05:12.300  INFO 21208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-24 21:05:12.304  INFO 21208 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-07-24 21:05:12.427  INFO 21208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-24 21:05:12.478  INFO 21208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-07-24 21:05:12.566  INFO 21208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-24 21:05:12.643  INFO 21208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-24 21:05:13.104  INFO 21208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-24 21:05:13.109  INFO 21208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 21:05:13.357  WARN 21208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-24 21:05:13.608  INFO 21208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-24 21:05:13.623  WARN 21208 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 21:05:13.624  INFO 21208 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 21:05:13.626  WARN 21208 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-07-24 21:05:13.626  INFO 21208 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-24 21:05:13.714  INFO 21208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-24 21:05:14.104  INFO 21208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-24 21:05:14.116  INFO 21208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-24 21:05:14.136  INFO 21208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-24 21:05:14.257  INFO 21208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-07-24 21:05:14.373  INFO 21208 --- [main] c.m.order.OrderServiceApplication        : Started OrderServiceApplication in 4.15 seconds (JVM running for 4.671)
+2020-07-24 21:06:29.783  INFO 21208 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-24 21:06:29.784  INFO 21208 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-24 21:06:29.790  INFO 21208 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-24 21:06:29.884  INFO 21208 --- [http-nio-5000-exec-1] c.m.order.service.ProductCacheService    : Retrieving products-------
+2020-07-24 21:08:32.365  INFO 21208 --- [http-nio-5000-exec-3] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 21:08:32.365  INFO 21208 --- [http-nio-5000-exec-3] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 21:08:32.382  INFO 21208 --- [http-nio-5000-exec-3] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 21:08:32.442  INFO 21208 --- [http-nio-5000-exec-3] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 21:09:19.556  INFO 21208 --- [http-nio-5000-exec-5] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 21:09:19.557  INFO 21208 --- [http-nio-5000-exec-5] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 21:09:19.558  INFO 21208 --- [http-nio-5000-exec-5] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 21:09:19.564  INFO 21208 --- [http-nio-5000-exec-5] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 21:09:32.083  INFO 21208 --- [http-nio-5000-exec-6] c.m.order.controller.OrderController     : Creating orders----
+2020-07-24 21:09:32.084  INFO 21208 --- [http-nio-5000-exec-6] com.mindtree.order.service.OrderService  : Mapping orderRequest list to order list
+2020-07-24 21:09:32.084  INFO 21208 --- [http-nio-5000-exec-6] com.mindtree.order.service.OrderService  : Mapped orderRequest list to order list
+2020-07-24 21:09:32.088  INFO 21208 --- [http-nio-5000-exec-6] c.m.order.controller.OrderController     : Created orders----
+2020-07-24 22:09:31.500  WARN 21208 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m49s32ms367µs700ns).
+2020-07-24 22:09:53.769  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-24 22:09:53.772  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-24 22:09:53.776  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-24 22:09:53.776  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-07-24 22:09:53.778 ERROR 21208 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: drop table order_mindtree if exists
+2020-07-24 22:09:53.783  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-24 22:09:53.787  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-24 22:09:53.808  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-24 22:09:53.811  INFO 21208 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
