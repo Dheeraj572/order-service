@@ -17,10 +17,10 @@ import com.mindtree.order.constraintvalidators.ValidOrder;
 import com.mindtree.order.service.IOrderService;
 import com.mindtree.order.service.ProductCacheService;
 import com.mindtree.order.userexception.ProductNotFound;
-import com.mindtree.order.util.OrderItemRequest;
+import com.mindtree.order.util.ProductRequest;
 import com.mindtree.order.util.OrderRequest;
 import com.mindtree.order.util.OrderResponse;
-import com.mindtree.order.util.Product;
+import com.mindtree.order.util.ProductResponse;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -47,9 +47,9 @@ public class OrderController {
 	@PostMapping
 	public void createOrder(@RequestBody @ValidOrder List<OrderRequest> orderRequestList) throws Exception {
 
-		List<Product> productList = loadProducts();
+		List<ProductResponse> productList = loadProducts();
 		isProductAvailable(orderRequestList, productList);
-		
+
 		log.info("Creating orders----");
 
 		iOrderService.createOrder(orderRequestList);
@@ -70,7 +70,7 @@ public class OrderController {
 		List<OrderResponse> orderResponseList = iOrderService.getOrders();
 		Optional<List<OrderResponse>> orderListOptional = Optional.ofNullable(orderResponseList);
 
-		if (orderListOptional.isPresent() && orderListOptional.isEmpty()) {
+		if (orderListOptional.isPresent() && orderListOptional.get().isEmpty()) {
 
 			log.info("No Content------");
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -81,18 +81,25 @@ public class OrderController {
 		return new ResponseEntity<>(orderResponseList, HttpStatus.OK);
 	}
 
-	private List<Product> loadProducts() {
+	//To load all products from order-item-service
+	private List<ProductResponse> loadProducts() {
 
 		return productCacheService.getProducts();
 	}
 
-	private void isProductAvailable(List<OrderRequest> orderRequestList, List<Product> productList) throws Exception {
+	//To check if selected products list is available in product table
+	private void isProductAvailable(List<OrderRequest> orderRequestList, List<ProductResponse> productList) {
 
+		log.info("Checking if the selected products are available-----");
+		
 		for (OrderRequest orderRequest : orderRequestList) {
-			List<OrderItemRequest> orderItemList = orderRequest.getOrderItemList();
+			List<ProductRequest> orderItemList = orderRequest.getOrderItemList();
 
-			long count = orderItemList.parallelStream().filter(orderItem -> productList.parallelStream()
-					.anyMatch(product -> product.getProductName().equals(orderItem.getProductName()))).count();
+			long count = orderItemList.parallelStream()
+					.filter(orderItem -> productList.parallelStream()
+							.anyMatch(product -> product.getProductName().equals(orderItem.getProductName())
+									&& orderItem.getQuantity() <= product.getAvailableQuantity()))
+					.count();
 
 			if (count != orderItemList.size()) {
 				throw new ProductNotFound("Product not found");

@@ -26,7 +26,7 @@ public class OrderService implements IOrderService {
 
 	@Override
 	public void createOrder(List<OrderRequest> orderRequestList) {
-		
+
 		log.info("Mapping orderRequest list to order list");
 
 		List<Order> orderList = orderRequestList.parallelStream().map(OrderService::convertToOrder)
@@ -54,7 +54,7 @@ public class OrderService implements IOrderService {
 	}
 
 	private static Order convertToOrder(OrderRequest orderRequest) {
-		
+
 		Order order = objectMapper.convertValue(orderRequest, Order.class);
 		order.setOrderDate(new Date());
 		return order;

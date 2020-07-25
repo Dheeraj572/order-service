@@ -25,6 +25,8 @@ public class Order {
 	private String customerName;
 	private Date orderDate;
 	private String shippingAddress;
+	private Float totalCost;
 	@OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	private Set<OrderedItem> orderItemList;
+	private Set<OrderedProduct> orderItemList;
+	
 }

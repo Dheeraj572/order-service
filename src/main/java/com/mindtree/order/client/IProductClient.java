@@ -4,11 +4,11 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.mindtree.order.util.Product;
+import com.mindtree.order.util.ProductResponse;
 
 @FeignClient(value = "product", url = "http://localhost:4000")
 public interface IProductClient {
 
 	@GetMapping("products")
-	List<Product> getProducts();
+	List<ProductResponse> getProducts();
 }

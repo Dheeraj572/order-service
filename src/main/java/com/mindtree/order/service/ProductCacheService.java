@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.mindtree.order.client.IProductClient;
-import com.mindtree.order.util.Product;
+import com.mindtree.order.util.ProductResponse;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -19,8 +19,10 @@ public class ProductCacheService {
 	private IProductClient iProductClient;
 
 	@Cacheable(value = "products")
-	public List<Product> getProducts() {
+	public List<ProductResponse> getProducts() {
+		
 		log.info("Retrieving products-------");
+		
 		return iProductClient.getProducts();
 	}
 
