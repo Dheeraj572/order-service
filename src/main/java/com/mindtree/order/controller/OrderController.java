@@ -2,6 +2,7 @@ package com.mindtree.order.controller;
 
 import java.util.List;
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,13 +14,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.mindtree.order.constraintvalidators.ValidOrder;
 import com.mindtree.order.service.IOrderService;
 import com.mindtree.order.service.ProductCacheService;
 import com.mindtree.order.userexception.ProductNotFound;
-import com.mindtree.order.util.ProductRequest;
 import com.mindtree.order.util.OrderRequest;
 import com.mindtree.order.util.OrderResponse;
+import com.mindtree.order.util.ProductRequest;
 import com.mindtree.order.util.ProductResponse;
 
 import io.swagger.annotations.ApiOperation;
@@ -64,7 +66,7 @@ public class OrderController {
 			@ApiResponse(code = 204, message = "No Content") })
 	@GetMapping
 	public ResponseEntity<?> getOrders() {
-
+		
 		log.info("Retrieving orders------");
 
 		List<OrderResponse> orderResponseList = iOrderService.getOrders();
