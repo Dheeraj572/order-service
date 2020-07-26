@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -34,6 +35,7 @@ import lombok.extern.log4j.Log4j2;
 @CrossOrigin
 @Log4j2
 @Validated
+@RefreshScope
 public class OrderController {
 
 	@Autowired
