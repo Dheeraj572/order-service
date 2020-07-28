@@ -33,9 +33,9 @@ import lombok.extern.log4j.Log4j2;
 @RestController
 @RequestMapping("orders")
 @CrossOrigin
-@Log4j2
 @Validated
 @RefreshScope
+@Log4j2
 public class OrderController {
 
 	@Autowired
@@ -54,11 +54,7 @@ public class OrderController {
 		List<ProductResponse> productList = loadProducts();
 		isProductAvailable(orderRequestList, productList);
 
-		log.info("Creating orders----");
-
 		iOrderService.createOrder(orderRequestList);
-
-		log.info("Created orders----");
 
 	}
 
@@ -69,8 +65,6 @@ public class OrderController {
 	@GetMapping
 	public ResponseEntity<?> getOrders() {
 		
-		log.info("Retrieving orders------");
-
 		List<OrderResponse> orderResponseList = iOrderService.getOrders();
 		Optional<List<OrderResponse>> orderListOptional = Optional.ofNullable(orderResponseList);
 
@@ -80,7 +74,6 @@ public class OrderController {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 
-		log.info("Retrieved orders------");
 
 		return new ResponseEntity<>(orderResponseList, HttpStatus.OK);
 	}

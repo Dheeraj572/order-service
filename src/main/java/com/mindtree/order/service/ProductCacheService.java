@@ -9,10 +9,7 @@ import org.springframework.stereotype.Service;
 import com.mindtree.order.client.IProductClient;
 import com.mindtree.order.util.ProductResponse;
 
-import lombok.extern.log4j.Log4j2;
-
 @Service
-@Log4j2
 public class ProductCacheService {
 
 	@Autowired
@@ -20,9 +17,7 @@ public class ProductCacheService {
 
 	@Cacheable(value = "products")
 	public List<ProductResponse> getProducts() {
-		
-		log.info("Retrieving products-------");
-		
+
 		return iProductClient.getProducts();
 	}
 
